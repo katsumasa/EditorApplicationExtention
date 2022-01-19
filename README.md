@@ -1,9 +1,10 @@
 # EditorApplicationExtention
-EditorApplication Extention
+
+![GitHub package.json version](https://img.shields.io/github/package-json/v/katsumasa/EditorApplicationExtention?style=plastic)
 
 ## 概要
 
-UnityEditor.EditorApplicationクラスで不足している機能や非公開のメソッドやプロパティを使えるようにすることを目指しています。
+[UnityEditor.EditorApplication](https://docs.unity3d.com/ja/current/ScriptReference/EditorApplication.html)クラスで不足している機能や非公開のメソッドやプロパティを使用出来るClassを目指しています。
 
 ## プロパティ
 
