@@ -1,0 +1,16 @@
+{
+  "name": "com.utj.editorapplicationextention",
+  "version": "0.1.0",
+  "displayName": "EditorApplication Extentions",
+  "description": "This package extends UnityEditor.EditorApplication class",
+  "unity": "2019.4",
+  "dependencies": {},
+  "keywords": [
+    "EditorApplication"
+  ],
+  "author": {
+    "name": "Katsumasa.Kimura",
+    "email": "katsumasa@unity3d.com",
+    "url": "https://github.com/katsumasa"
+  }
+}
