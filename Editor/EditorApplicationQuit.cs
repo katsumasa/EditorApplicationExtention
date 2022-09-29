@@ -7,17 +7,17 @@ namespace UTJ
 {
     public partial class EditorApplicationExtention
     {
-        static FieldInfo m_eitorApplicationQuitFieldInfo;
+        static FieldInfo m_editorApplicationQuitFieldInfo;
 
-        static FieldInfo eitorApplicationQuitFieldInfo
+        static FieldInfo editorApplicationQuitFieldInfo
         {
             get
             {
-                if (m_eitorApplicationQuitFieldInfo == null)
+                if (m_editorApplicationQuitFieldInfo == null)
                 {
-                    m_eitorApplicationQuitFieldInfo = typeof(EditorApplication).GetField("editorApplicationQuit", BindingFlags.Static | BindingFlags.Instance | BindingFlags.NonPublic);
+                    m_editorApplicationQuitFieldInfo = typeof(EditorApplication).GetField("editorApplicationQuit", BindingFlags.Static | BindingFlags.Instance | BindingFlags.NonPublic);
                 }
-                return m_eitorApplicationQuitFieldInfo;
+                return m_editorApplicationQuitFieldInfo;
             }
         }
 
@@ -25,18 +25,18 @@ namespace UTJ
         /// <summary>
         /// UnityEditor終了時に実行されるUnityAction
         /// </summary>
-        public static UnityAction eitorApplicationQuit
+        public static UnityAction editorApplicationQuit
         {
             get 
             {
-                return eitorApplicationQuitFieldInfo.GetValue(null) as UnityAction;
+                return editorApplicationQuitFieldInfo.GetValue(null) as UnityAction;
             }
 
             set
             {
-                var actions = eitorApplicationQuitFieldInfo.GetValue(null) as UnityAction;
+                var actions = editorApplicationQuitFieldInfo.GetValue(null) as UnityAction;
                 actions += value;
-                eitorApplicationQuitFieldInfo.SetValue(null, actions);
+                editorApplicationQuitFieldInfo.SetValue(null, actions);
 
             }
         }
