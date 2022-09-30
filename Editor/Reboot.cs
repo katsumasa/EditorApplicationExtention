@@ -11,7 +11,7 @@ namespace UTJ
         [MenuItem("File/Reboot",false,241)]
         public static void Reboot()
         {
-            eitorApplicationQuit += RebootCB;
+            editorApplicationQuit += RebootCB;
             UnityEditor.EditorApplication.Exit(0);
         }
 
@@ -33,7 +33,7 @@ namespace UTJ
 
         static void RebootCB()
         {
-            eitorApplicationQuit -= RebootCB;
+            editorApplicationQuit -= RebootCB;
 
             var argv = System.Environment.GetCommandLineArgs();
             var args = new string[argv.Length - 1];

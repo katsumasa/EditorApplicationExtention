@@ -1,6 +1,6 @@
 {
   "name": "com.utj.editorapplicationextention",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "EditorApplication Extentions",
   "description": "This package extends UnityEditor.EditorApplication class",
   "unity": "2019.4",
